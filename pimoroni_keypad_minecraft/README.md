@@ -14,3 +14,7 @@ It is currently compatible with Adafruit 6.2.0 CircuitPython library ( <https://
    - adafruit_dotstar.mpy
    - adafruit_hid
 1. Copy this project's `code.py`file to the root of your `CIRCUITPY` drive.
+
+# Result
+
+![](project.jpg)
