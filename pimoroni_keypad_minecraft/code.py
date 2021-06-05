@@ -42,7 +42,7 @@ COLOR_PURPLE_PINK = 13
 COLOR_PINK = 14
 COLOR_PINK_RED = 15
 
-# Assign the custom colors to the keys : gree = navigation, yellow & peach = items, 
+# Assign the custom colors to the keys : green = navigation, yellow & peach = items, 
 # cyan = jump, purple = crouch, pink = inventory, red = ESC
 keys_colors = [COLOR_YELLOW, COLOR_RED, COLOR_GREEN, COLOR_PINK,
                 COLOR_YELLOW, COLOR_GREEN, COLOR_GREEN, COLOR_GREEN,
@@ -55,11 +55,20 @@ keys_repetition = [True, True, False, True,
                     True, True, True, False,
                     True, True, True, False]
 
-# Define the key codes to send
-keys_function = [Keycode.KEYPAD_ONE, Keycode.ESCAPE, Keycode.Z, Keycode.E,
+# Define the key codes to send for an AZERTY keyboard
+keys_function_azerty = [Keycode.KEYPAD_ONE, Keycode.ESCAPE, Keycode.Z, Keycode.E,
                     Keycode.KEYPAD_TWO, Keycode.Q, Keycode.S, Keycode.D,
                     Keycode.KEYPAD_THREE, Keycode.KEYPAD_FIVE, Keycode.KEYPAD_SIX, Keycode.LEFT_SHIFT,
                     Keycode.KEYPAD_FOUR, Keycode.KEYPAD_SEVEN, Keycode.KEYPAD_EIGHT, Keycode.SPACEBAR]
+
+# Define the key codes to send for a QWERTY keyboard
+keys_function_qwerty = [Keycode.KEYPAD_ONE, Keycode.ESCAPE, Keycode.W, Keycode.E,
+                    Keycode.KEYPAD_TWO, Keycode.A, Keycode.S, Keycode.D,
+                    Keycode.KEYPAD_THREE, Keycode.KEYPAD_FIVE, Keycode.KEYPAD_SIX, Keycode.LEFT_SHIFT,
+                    Keycode.KEYPAD_FOUR, Keycode.KEYPAD_SEVEN, Keycode.KEYPAD_EIGHT, Keycode.SPACEBAR]
+
+# Choose here the keyboard layout you need to use
+keys_function = keys_function_azerty
 
 # Great color picking function : Thanks Sandy !
 def colourwheel(pos):
